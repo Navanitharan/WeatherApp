@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card-container{
+    height: 100%;
+    position: relative;
+}
+.card-item{
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    height: 100%;
+}
+.btn{
+    position: absolute;
+    bottom: 15px;
+    background-color: #068FFF;
+}
+.top{
+    display: flex;
+    justify-content: center;
+}
+.top .flag img{
+    width: 70px;
+}
+.top .name p{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-body p{
+    font-size: small;
+    font-weight: 200;
+}
+.container{
+    position: relative;
+}
+.popup-container{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    z-index: 10;
+    width: 70vw;
+    height: 60vh;
+    background-color: antiquewhite;
+}
+.popup{
+    padding: 15px;
+    font-family: sans-serif;
+}
+.popup-body{
+    display: flex;
+    justify-content: space-around;
+}
