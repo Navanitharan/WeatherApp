@@ -19,7 +19,7 @@ let detailsobj;
                 let div=document.createElement('div');
                 div.className=`container-fluid col-lg-4 col-sm-12 card-container `;
                 div.style.backgroundColor="#000";
-                div.style.height="300px";
+                div.style.height="350px";
                 div.style.color="#fff"
                 div.innerHTML=`<div class="card-item">
                     <div class="top">
