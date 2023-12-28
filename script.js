@@ -5,8 +5,6 @@ container.style.backgroundColor="#000"
 
 //API logic
 let detailsobj;
-        let names;
-        let count = 0;
         let objdetails;
         fetch("https://restcountries.com/v3.1/all")
 
@@ -19,7 +17,7 @@ let detailsobj;
             for(let i=0;i<data.length;i++){
                 names=data[i].name;
                 let div=document.createElement('div');
-                div.className=`container-fluid mb-4 col-lg-4 col-sm-12 card-container `;
+                div.className=`container-fluid col-lg-4 col-sm-12 card-container `;
                 div.style.backgroundColor="#000";
                 div.style.height="300px";
                 div.style.color="#fff"
@@ -52,10 +50,11 @@ let detailsobj;
             console.log(detailsobj);
         })
         .catch((error)=>{
-                console.log("error in fetching the data in "+names ,error)
+                console.log(error)
         })
 
 let wethrdtl;
+//load the weather details with latitude and langitude
 function loadWeather(lat,lng){
     let wethrdtl;
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=2ec8027f9afa11371eb8cb23292005ff`)
@@ -70,6 +69,5 @@ function loadWeather(lat,lng){
     .catch((error)=>{
         console.log(error)
     })
-    //alert()
+    
 }     
-/////////////////////////////////////////////////////////
