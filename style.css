@@ -10,6 +10,8 @@
     border: 1px solid #EEEEEE;
     padding: 10px;
     height: 100%;
+   text-align: center;
+
 }
 .btn{
     position: absolute;
@@ -18,10 +20,11 @@
 }
 .top{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 .top .flag img{
-    width: 70px;
+    width: 200px;
 }
 .top .name p{
     font-size: large;
